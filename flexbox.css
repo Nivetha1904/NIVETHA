@@ -1,0 +1,33 @@
+.container
+{
+    background-color: rgb(157, 0, 255);  
+    color: white;  
+    padding: 100px;  
+    display:flex;
+    height: 500px;
+    width: 1000px;
+    justify-content:center;
+}
+.bike
+{
+    background-color: rgb(191, 127, 255);
+    padding:10px;
+    border: 20px solid;
+    font-style: oblique;
+
+
+}
+.car
+{
+    background-color: brown;
+    padding: 10px;
+    border: 20px solid;
+    font-style: oblique;
+}
+.bus
+{
+    background-color: rgb(42, 165, 52);
+    padding: 10px;
+    border: 20px solid;
+    font-style: oblique;
+}
