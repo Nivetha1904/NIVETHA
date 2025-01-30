@@ -1,0 +1,142 @@
+/* General styling */
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Welcome Section */
+  #welcome {
+    background-color: #f0f8ff; /* Light background color for Home page */
+    padding: 60px 0;
+  }
+  
+  .welcome-container {
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  h1, p {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Content Sections */
+  .content-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .content-section h2 {
+    margin-top: 0;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+  }
+  
+  .project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Adjusting the layout for smaller screens */
+  @media (max-width: 768px) {
+    .welcome-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .left, .right {
+      flex: none;
+      width: 100%;
+    }
+  }

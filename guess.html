@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    <h1>Guessing Game</h1>
+    <button onclick="guessNumber()">Start Game</button>
+    <div class="message" id="message"></div>
+    <div class="attempts" id="attempts"></div>
+
+    <script>
+        function guessNumber() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            let guess;
+            let attempts = 0;
+            const messageDiv = document.getElementById('message');
+            const attemptsDiv = document.getElementById('attempts');
+
+            do {
+                guess = prompt("Guess a number between 1 and 100:");
+                guess = Number(guess);
+                attempts++;
+
+                if (guess < randomNumber) {
+                    messageDiv.textContent = "Your guess is too low! Try again.";
+                } else if (guess > randomNumber) {
+                    messageDiv.textContent = "Your guess is too high! Try again.";
+                } else if (guess === randomNumber) {
+                    messageDiv.textContent = `🎉 Correct! You guessed the number in ${attempts} attempts.`;
+                }
+
+                attemptsDiv.textContent = `Attempts: ${attempts}`;
+            } while (guess !== randomNumber);
+        }
+    </script>
+</body>
+</html>
